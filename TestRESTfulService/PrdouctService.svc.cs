@@ -15,6 +15,9 @@ namespace TestRESTfulService
         {
         }
 
-
+        public List<Product> GetProductList()
+        {
+            return Products.Instance.ProductList;
+        }
     }
 }
