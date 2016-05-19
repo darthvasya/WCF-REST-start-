@@ -16,10 +16,12 @@ namespace TestRESTfulService
         void DoWork();
 
         [OperationContract]
-        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Xml,
+        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json,
                                     BodyStyle = WebMessageBodyStyle.Bare,
                                     UriTemplate = "GetProductList/")]
         List<Product> GetProductList();
+
+ 
  
     }
 }
